@@ -1,0 +1,17 @@
+
+
+<div class="card " style="width: 18rem">
+  <img [src]="photo" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{ comment }}</h5>
+    <span>{{prix}}</span>
+    <span>{{dispo}}</span>
+    <p>{{ commentaires}}</p>
+    <input type="text" [(ngModel)]="commentaires" />
+   <div class="d-flex">
+    <a href="#" class="btn btn-primary" (click)="addLike()">like</a>
+    <a href="#" class="btn btn-primary" (click)="dislike()">like</a>
+   </div>
+    <span>{{ like }}</span>
+  </div>
+</div>

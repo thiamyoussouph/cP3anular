@@ -1,0 +1,9 @@
+.content{justify-content: space-between;
+    margin: 0.4rem;
+
+}
+.message{color: green;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
