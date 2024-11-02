@@ -1,0 +1,8 @@
+.ng-dirty.ng-invalid,.ng-touched.ng-invalid{
+color: red;
+border-color: red;
+}
+.error{
+    color: red;
+    font-size: x-small;
+}

@@ -1,0 +1,28 @@
+<div
+  class="cord shadow-lg p-3 mb-5 bg-body-tertiary rounde"
+  style="width: 18rem; margin-left: 25%; margin-top: 6%"
+>
+  <form (submit)="onsubmit($event)">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">username</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        [formControl]="username"
+      />
+      @if (username.invalid &&(username.dirty || username.touched)) {
+ <div class="error">
+l le username ne dois pas etre vide 
+ </div>
+      }
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">password</label>
+      <input type="text" class="form-control" id="exampleInputPassword1"  [formControl]="password"/>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+  </form>
+</div>
